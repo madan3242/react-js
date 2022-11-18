@@ -9,7 +9,7 @@ function ProductAdmin() {
         getProducts();
    }, []);
     let getProducts = () => {
-        let url = `https;//127.0.0.1:5000/api/products`
+        let url = `https://127.0.0.1:5000/api/products`
         Axios.get(url)
              .then((response) => {
                 setProducts(response.data)
@@ -20,7 +20,7 @@ function ProductAdmin() {
     }
 
     let deleteProduct = (productid) => {
-        let delUrl = `https;//127.0.0.1:5000/api/products/${productid}`;
+        let delUrl = `https://127.0.0.1:5000/api/products/${productid}`;
         Axios.delete(delUrl)
              .then((response) => {
                 getProducts()

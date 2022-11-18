@@ -5,7 +5,7 @@ function ProductList() {
    let [products, setProducts] = useState([]);
    let [errMessage, setErrMessage] = useState("");
    useEffect(() => {
-    let url = `https;//127.0.0.1:5000/api/products`
+    let url = `https://127.0.0.1:5000/api/products`
     Axios.get(url)
          .then((response) => {
             setProducts(response.data)

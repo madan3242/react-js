@@ -32,7 +32,7 @@ function CreateProduct() {
 
     let submitHandler = (e) => {
         e.preventDefault();
-        let url = `https;//127.0.0.1:5000/api/products`;
+        let url = `https://127.0.0.1:5000/api/products`;
         Axios.post(url, product)
              .then((response) => {
                 setSubmitted(response.data)
