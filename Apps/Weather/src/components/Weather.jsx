@@ -8,7 +8,7 @@ const Weather = () => {
     const [weather, setWeather]=useState({})
     
     const getWeather = () => {
-        let API_KEY = '08fd635a4b9b9fc85c38820e54fe2521'
+        let API_KEY = ''
         let URL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`
 
         Axios.post(URL)
