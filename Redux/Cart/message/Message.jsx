@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { gmAction, gnAction } from '../redux/message/message.action';
 
 const Message = () => {
-    let message = useSelector(state => state.message.message)
-    let dispatch = useDispatch();
+  let message = useSelector(state => state.message.message)
+  let dispatch = useDispatch();
 
   return (
     <div>
