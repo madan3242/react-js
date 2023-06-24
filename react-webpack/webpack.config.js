@@ -15,12 +15,14 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     output: {
-      path: path.resolve(__dirname, './public'),
+      path: path.join(__dirname, "public"),
       filename: 'bundle.js',
     },
     devServer: {
       static: {
-        directory: path.resolve(__dirname, './public')
-      }
+        directory: path.join(__dirname, "public")
+      },
+      compress: true,
+      port: 4000,
     },
   };
